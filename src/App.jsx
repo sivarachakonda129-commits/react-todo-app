@@ -1,5 +1,6 @@
 import NewTodoForm from './NewTodoForm.jsx';
 import TodoList from './TodoList.jsx'
+import TodoFetcher from './TodoFetcher.jsx';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import './styles.css';
@@ -45,6 +46,9 @@ export default function App() {
       <NewTodoForm addTodo={addTodo} />
       <h1 className="header">Todo List</h1>
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+
+      <p>---------------------------------------------------------------------</p>
+      <TodoFetcher />
     </>
   )
 }
